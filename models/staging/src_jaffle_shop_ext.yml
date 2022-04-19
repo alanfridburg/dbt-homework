@@ -3,6 +3,6 @@ version: 2
 sources:
   - name: jaffle_shop_ext
     database: dbt-tutorial
+    schema: jaffle_shop
     tables:
       - name: products
-         

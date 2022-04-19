@@ -4,7 +4,7 @@
 
 {{
     config(
-      target_database='analytics',
+      target_database='dbt-tutorial',
       target_schema=new_schema,
       unique_key='order_id',
 

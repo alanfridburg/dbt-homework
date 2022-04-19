@@ -1,8 +1,8 @@
-{% snapshot snap_products %}
+{% snapshot orders_snapshot %}
 
 {{
     config(
-      target_database='sound-memory-346318',
+      target_database='homework',
       target_schema='snapshots',
       unique_key='id',
 
@@ -11,6 +11,6 @@
     )
 }}
 
-select * from {{ source('jaffle_shop_ext', 'products') }}
+select * from {{ source('jaffle_shop', 'orders') }}
 
 {% endsnapshot %}
